@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-form {
+        background: lightgray;
+        width: 50%;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .form-group {
+        margin: 10px 0;
+      }
+
+      .form-group label {
+        display: block;
+        margin: 5px 0;
+      }
+
+      .form-control,
+      textarea {
+        width: 100%;
+        font-size: 17px;
+        padding: 5px;
+      }
+
+      .btn {
+        background-color: #4bae50;
+        color: #fff;
+        font-size: 16px;
+        padding: 7px 15px;
+        border: 1px solid transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contact-form">
+        <form action="">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstName"
+              class="form-control"
+              placeholder="Your first name..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastName"
+              class="form-control"
+              placeholder="Your last name..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <select name="country" id="country" class="form-control">
+              <option value="australia">Australia</option>
+              <option value="brazil">Brazil</option>
+              <option value="canada">Canada</option>
+              <option value="denmark">Denmark</option>
+              <option value="egypt">Egypt</option>
+              <option value="france">France</option>
+              <option value="ghana">Ghana</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <textarea
+              name="subjext"
+              id="subject"
+              cols="30"
+              rows="10"
+              placeholder="Write something..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
